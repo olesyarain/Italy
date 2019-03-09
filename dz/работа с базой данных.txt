@@ -1,0 +1,16 @@
+1. Ќапишите запрос, который выведет все записи из таблицы Products
+SELECT * FROM Products
+
+2. Ќапишите запрос, который выведет только те записи из таблицы Products, в которых цена (product_price) больше 4
+SELECT * FROM  Products WHERE prod_price > "4"
+
+3. Ќапишите запрос, которые вернет только те записи из таблицы Customers, в которых cust_name Ќ≈ равно Fun4All
+SELECT * FROM  Customers WHERE cust_name != "Fun4All"
+
+4. Ќапишите запрос, который вернет все записи из таблицы OrderItems, отсортированные по уменьшению цены
+SELECT * FROM  OrderItems ORDER BY item_price DESC
+
+5*  Ќапишите запрос, добавл€ющий новую запись в таблицу Products. ƒанные можно использовать произвольные. ќбратите внимание, что поставщик (vend_id) может быть только уже существующий.
+
+insert INTO Products (prod_id, vend_id, prod_name, prod_price, prod_desc) VALUES 
+('322', 'DLL01', 'ball', '119', 'soccer ball');
